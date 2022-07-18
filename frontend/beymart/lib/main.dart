@@ -13,7 +13,7 @@ const productsGRaphQL = """ query getDepartment{
 
 }""";
 void main() {
-  final HttpLink httpLink = HttpLink("http://10.0.2.2:5000/");
+  final HttpLink httpLink = HttpLink("YOUR HOST ADDRESS");
   ValueNotifier<GraphQLClient> client = ValueNotifier(GraphQLClient(
     link: httpLink,
     cache: GraphQLCache(store: InMemoryStore()),
@@ -67,13 +67,11 @@ class _MyHomePageState extends State<MyHomePage> {
           options: QueryOptions(document: gql(productsGRaphQL)),
           builder: (QueryResult result, {fetchMore, refetch}) {
             if (result.hasException) {
-              print(result.exception.toString());
-              return Text(result.exception.toString()+"kkkkkkkkkkkkkkkkkkkkkk");
+              return Text(result.exception.toString());
             }
             if (result.isLoading) {
               return Center(child: CircularProgressIndicator());
             }
-            print("hellllo");
     
             final productList = result.data?['getProducts'];
             print(productList.length);
