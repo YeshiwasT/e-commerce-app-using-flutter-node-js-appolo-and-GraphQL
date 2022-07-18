@@ -1,0 +1,23 @@
+{
+    "development": {
+      "username": "YOUR USERNAME",
+      "password": "YOUR PASSWORD",
+      "database": "DATA BASE NAME",
+      "host": "HOST",
+      "dialect": "USED DATA BASE mysql"
+    },
+    "test": {
+      "username": "YOUR USERNAME",
+      "password": "YOUR PASSWORD",
+      "database": "DATA BASE NAME",
+      "host": "HOST",
+      "dialect": "USED DATA BASE mysql"
+    },
+    "production": {
+      "username": "YOUR USERNAME",
+      "password": "YOUR PASSWORD",
+      "database": "DATA BASE NAME",
+      "host": "HOST",
+      "dialect": "USED DATA BASE mysql"
+    }
+  }

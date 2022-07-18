@@ -1,0 +1,21 @@
+type Query {
+    getProducts:[Product]
+    getProduct(id:ID!):Product
+  }
+  
+  type Mutation {
+   
+    createProduct(
+    title:String
+    description:String
+    imageUrl:String
+    price:String
+    ):String
+    updateProduct(
+    id:ID!
+    title:String
+    imageUrl:String
+    price:String
+    ):String
+    deleteProduct(id:ID!):String
+}

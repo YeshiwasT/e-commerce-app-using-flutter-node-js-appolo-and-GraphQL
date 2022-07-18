@@ -1,0 +1,7 @@
+module.exports={
+    HOST:'HOST',
+    USER:"YOUR USERNAME",
+    PASSWORD:"YOUR PASSWORD",
+    DATABASE:"DATABASE NAME",
+    DIALECT:"USED DATA BASE mysql"
+}
